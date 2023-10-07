@@ -1,0 +1,11 @@
+version: '3'
+services:
+  custom_nginx:
+    image: nginximg
+    ports:
+      - "8080:80"
+    volumes:
+      - /var/opt/nginx:/var/opt/nginx
+volumes:
+  nginx-server-data:
+
